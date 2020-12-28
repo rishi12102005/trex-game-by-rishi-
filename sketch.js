@@ -125,7 +125,7 @@ function draw(){
   text("score:"+score,50,30);
   trex.velocityY = trex.velocityY+0.8;
  trex.collide(invisibleGround);
-if(score%100 === 0){
+if(score>0&&score%100){
 checkPointSound.play();
 }
   if(mousePressedOver(restart)){
